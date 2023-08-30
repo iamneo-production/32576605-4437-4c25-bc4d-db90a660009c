@@ -1,55 +1,54 @@
 /* src/HomePage.css */
 .home-page {
-    background-image: url("https://d1f6uk4q1da4gu.cloudfront.net/images/c0/01/c001861c599452b51c026b2ef21619b35dab633e0a5ea947066d7718271c54b8.jpg?d=660x440");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-  }
-  
-  .link-container {
-    margin-top: 5vh; /* Adjust the margin-top value as needed */
-    display: flex;
-    gap: 30px;
-    margin-bottom: 4rem;
-  }
-  
-  .styled-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .styled-link:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .admin-link {
-    background-color: #28a745;
-  }
-  
-  .patient-link {
-    background-color: #dc3545;
-  }
-  
-  .doctor-link {
-    background-color: #ffc107;
-  }
-  .highlighted-heading {
-    font-size: 3rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  
+  background-image: url("https://d1f6uk4q1da4gu.cloudfront.net/images/c0/01/c001861c599452b51c026b2ef21619b35dab633e0a5ea947066d7718271c54b8.jpg?d=660x440");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.link-container {
+  margin-top: 5vh; /* Adjust the margin-top value as needed */
+  display: flex;
+  gap: 30px;
+  margin-bottom: 4rem;
+}
+
+.styled-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.styled-link:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.admin-link {
+  background-color: #28a745;
+}
+
+.patient-link {
+  background-color: #dc3545;
+}
+
+.doctor-link {
+  background-color: #ffc107;
+}
+.highlighted-heading {
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+

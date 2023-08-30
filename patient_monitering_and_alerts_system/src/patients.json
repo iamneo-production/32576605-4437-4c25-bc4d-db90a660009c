@@ -1,0 +1,67 @@
+{
+    "patients": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "john123",
+        "bloodGroup": "A+",
+        "gender": "Male",
+        "age": 30
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "password": "jane456",
+        "bloodGroup": "B-",
+        "gender": "Female",
+        "age": 25
+      },
+      {
+        "id": 3,
+        "name": "Michael Johnson",
+        "email": "michael@example.com",
+        "password": "michael789",
+        "bloodGroup": "O+",
+        "gender": "Male",
+        "age": 45
+      },
+      {
+        "name": "hello",
+        "email": "h@gmail.com",
+        "password": "h23",
+        "bloodGroup": "A",
+        "gender": "Female",
+        "age": "21",
+        "id": 4
+      },
+      {
+        "name": "hi",
+        "email": "h@gmail.com",
+        "password": "h123",
+        "bloodGroup": "A",
+        "gender": "Female",
+        "age": "21",
+        "id": 5
+      },
+      {
+        "name": "heyh",
+        "email": "he@gmail.com",
+        "password": "h@23",
+        "bloodGroup": "A",
+        "gender": "Female",
+        "age": "21",
+        "id": 6
+      },
+      {
+        "name": "Satyam Rastogi",
+        "email": "satyamr520@gmail.com",
+        "password": "Satyam@123",
+        "bloodGroup": "O+",
+        "gender": "Male",
+        "age": "25",
+        "id": 7
+      }
+    ]
+  }
