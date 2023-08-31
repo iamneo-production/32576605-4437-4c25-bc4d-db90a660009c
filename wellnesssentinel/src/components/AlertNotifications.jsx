@@ -1,15 +1,15 @@
-import { Alert, Box } from "@mui/material";
 import React, { useState, useEffect } from "react";
+import { Box, Alert } from "@mui/material";
 
-const AlertNotifications = ({ vitalSigns, thresholds }) => {
+const AlertNotifications = ({ patient }) => {
   const [alerts, setAlerts] = useState([]);
 
   useEffect(() => {
     const newAlerts = [];
 
-    for (const key in vitalSigns) {
-      const value = parseFloat(vitalSigns[key]);
-      const { min, max } = thresholds[key];
+    for (const key in patient.vitalSigns) {
+      const value = parseFloat(patient.vitalSigns[key]);
+      const { min, max } = patient.thresholds[key];
 
       if (value < min || value > max) {
         newAlerts.push(`${key} is out of range`);
@@ -17,21 +17,20 @@ const AlertNotifications = ({ vitalSigns, thresholds }) => {
     }
 
     setAlerts(newAlerts);
-  }, [vitalSigns, thresholds]);
+  }, [patient.vitalSigns, patient.thresholds]);
 
-  
   return (
     <div>
       <Box
         sx={{
-          background: "skyblue",
+          background: "#0d6e7b",
           padding: "10px",
           textAlign: "center",
           borderRadius: "10px",
           margin: "10px",
         }}
       >
-        <h2>Alert Notifications</h2>
+        <h2>Alert Notifications for {patient.name}</h2>
       </Box>
       {alerts.length > 0 ? (
         <div>
