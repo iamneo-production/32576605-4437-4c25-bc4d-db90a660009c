@@ -1,12 +1,17 @@
 import React from 'react';
 
-const PatientProfile = ({ patientData }) => {
+const PatientProfile = ({ patient }) => {
   return (
-    <div className="patient-profile">
-      <h2>{patientData.name}</h2>
-      <p>Age: {patientData.age}</p>
-      <p>Medical History: {patientData.medicalHistory}</p>
-      {/* Display vital sign data here */}
+    <div className="container">
+      <h1>Patient Profile</h1>
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">{patient.name}</h5>
+          <p className="card-text">Age: {patient.age}</p>
+          <p className="card-text">Medical History: {patient.medicalHistory}</p>
+          {/* Display other patient information */}
+        </div>
+      </div>
     </div>
   );
 };

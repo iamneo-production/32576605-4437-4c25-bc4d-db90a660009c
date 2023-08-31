@@ -1,23 +1,22 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 
-const VitalSignChart = ({ data }) => {
+const VitalSignChart = ({ timestamps, data, vitalSign }) => {
   const chartData = {
-    labels: data.timestamps,
+    labels: timestamps,
     datasets: [
       {
-        label: 'Heart Rate',
-        data: data.heartRate,
-        borderColor: 'red',
+        label: vitalSign,
+        data,
+        borderColor: 'blue',
         fill: false,
       },
-      // Add more datasets for other vital signs
     ],
   };
 
   return (
-    <div className="vital-sign-chart">
-      <h2>Vital Sign Trends</h2>
+    <div className="container">
+      <h1>Vital Sign Trends: {vitalSign}</h1>
       <Line data={chartData} />
     </div>
   );
