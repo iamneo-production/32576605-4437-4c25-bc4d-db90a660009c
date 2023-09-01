@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import AlertNotifications from "./components/AlertNotifications";
 import ThresholdConfiguration from "./components/ThresholdConfiguration";
+import DataVisualization from "./components/DataVisualization";
 
 function App() {
   const [patients, setPatients] = useState([
@@ -60,6 +61,7 @@ function App() {
           <AlertNotifications
             patient={patient}
           />
+          <DataVisualization key={patient.id} patient={patient} />
         </div>
       ))}
     </div>
