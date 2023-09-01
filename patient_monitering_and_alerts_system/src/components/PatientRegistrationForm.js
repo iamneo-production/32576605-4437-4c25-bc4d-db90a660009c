@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import './PatientRegistrationForm.css'; // Import the CSS file
 
 
@@ -256,7 +256,9 @@ function PatientRegistrationForm() {
 
 
       <button type="submit">Register</button>
-
+      <div className="login-link">
+       <Link to="/login">Log in here</Link>
+</div>
     </form>
 
   );

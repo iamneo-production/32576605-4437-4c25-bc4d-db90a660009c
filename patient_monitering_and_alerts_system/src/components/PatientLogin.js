@@ -36,18 +36,10 @@ function PatientLogin(props) {
 
 
     if (patient) {
-
       alert('Login successful!');
-     //navigate.push('/dashboard');
- 
-navigate("/pd");
-  //return <Navigate  to="/pd" />;
-
-
+      navigate(`/pd?name=${encodeURIComponent(patient.name)}`);
     } else {
-
       alert('Login failed!');
-
     }
 
   };

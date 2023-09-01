@@ -1,55 +1,63 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './PatientDashboard.css'; // Import your custom CSS file
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBBtn,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBCollapse,
+} from 'mdb-react-ui-kit';
 
-function PatientDashboard() {
-  const navigate = useNavigate();
+ 
 
-  const handleLogout = () => {
-    // Assuming you have a logout logic...
-    // Clear session/token, etc.
-    // history.push('/login'); // Navigate back to the login page
-    navigate('/pd');
-  };
+export default function PatientDashboard() {
+  
 
-  const handleBack = () => {
-    // Navigate back to a previous route
-    navigate(-1);
-  };
+ 
 
   return (
-    <div className="dashboard-container">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
-          <button className="btn btn-light" onClick={handleLogout}>
-            Logout
-          </button>
-        </div>
-      </nav>
-      <div className="container content-container">
-        <h1 className="dashboard-heading">Patient Dashboard</h1>
-        <div className="dashboard-buttons">
-          <button className="btn btn-primary" onClick={handleBack}>
-            Back
-          </button>
-          <button className="btn btn-primary" onClick={handleLogout}>
-            Logout
-          </button>
-        </div>
-        <div className="dashboard-content">
-          <div className="dashboard-links">
-            <a className="btn btn-primary" href="/patient-details">
-              Show Details
-            </a>
-            <a className="btn btn-primary" href="/patient-reports">
-              Show Reports
-            </a>
-          </div>
-          {/* Your dashboard content goes here */}
-        </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Navbar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
       </div>
-    </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div>
+</nav>
   );
 }
-
-export default PatientDashboard;
