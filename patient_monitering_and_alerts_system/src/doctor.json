@@ -1,0 +1,44 @@
+{
+    "doctor": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "john123",
+        "gender": "Male",
+        "age": 30,
+        "qualification": "MD",
+        "city": "NewDelhi"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "password": "jane456",
+        "gender": "Female",
+        "age": 25,
+        "qualification": "MD",
+        "city": "NewDelhi"
+      },
+      {
+        "id": 3,
+        "name": "Michael Johnson",
+        "email": "michael@example.com",
+        "password": "michael789",
+        "gender": "Male",
+        "age": 45,
+        "qualification": "MS",
+        "city": "NewDelhi"
+      },
+      {
+        "name": "Sa",
+        "email": "aas@gmail.com",
+        "password": "axcsd",
+        "gender": "Male",
+        "age": "23",
+        "qualification": "ms",
+        "city": "fbd",
+        "id": 4
+      }
+    ]
+  }

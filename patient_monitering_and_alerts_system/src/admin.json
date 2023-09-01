@@ -1,0 +1,26 @@
+{
+    "admin": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "john123",
+        "gender": "Male",
+        "age": 30
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "password": "jane456",
+        "gender": "Female"
+      },
+      {
+        "name": "Akhilesh Mishra",
+        "email": "akm319@gmail.com",
+        "password": "akhil123",
+        "gender": "Male",
+        "id": 3
+      }
+    ]
+  }
