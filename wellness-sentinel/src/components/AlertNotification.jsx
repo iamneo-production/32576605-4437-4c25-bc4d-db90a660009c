@@ -6,12 +6,11 @@ const AlertNotifications = ({ patient }) => {
 
   useEffect(() => {
     const newAlerts = [];
-    
+
     for (const key in patient.vitalSigns) {
       const value = parseFloat(patient.vitalSigns[key]);
       const { min, max } = patient.thresholds[key];
 
-      
       if (value < min || value > max) {
         const alertId = `${key}-${new Date().getTime()}`;
         newAlerts.push({ id: alertId, message: `${key} reading crossed a threshold` });
