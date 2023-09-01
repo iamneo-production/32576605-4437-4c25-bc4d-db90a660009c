@@ -7,27 +7,26 @@ import Login from './components/Login';
 import Home from './components/Home';
 import PatientProfile from './components/PatientProfile';
 import Alerts from './components/Alerts';
-import PatientMonitoringApp from './components/PateintMonitoringApp';
+import PatientMonitoringApp from './components/PateintMonitoringApp.jss';
 import { useState } from 'react';
 import PrivateRoute from './Routes/PrivateRoute';
+import UpdateThreshold from './components/UpdateThreshold';
 
 function App() {
   const [AdminLogged,setAdminLogged]=useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
 
   return (
     
     
     <Router>
         <Routes>
-        <Route path="/login">
-          <Login setIsAuthenticated={setIsAuthenticated} />
-        </Route>
-        <PrivateRoute
+        <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
+        {/* <Route
           path="/dashboard"
-          component={Dashboard}
-          isAuthenticated={isAuthenticated}
-        />
+          element={<PrivateRoute component={Dashboard} isAuthenticated={isAuthenticated} />}
+        /> */}
+
         <Route path="/" element={<Home/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
         {/* <Route path="/login" element={<Login/>} /> */}
@@ -35,7 +34,8 @@ function App() {
         <Route path="/alerts" element={<Alerts/>} />
         <Route path="/monitor" element={<PatientMonitoringApp/>} />
         <Route path="/profile/:patientId" element={<PatientProfile/>} />
-
+        <Route path="/updatethreshold" element={<UpdateThreshold/>} />
+        
         
         </Routes>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-
+import axios from 'axios';
 
 const PatientMonitoringApp = () => {
     const [error, setError] = useState(null);

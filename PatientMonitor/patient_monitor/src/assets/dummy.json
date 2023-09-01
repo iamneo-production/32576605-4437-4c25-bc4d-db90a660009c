@@ -1,7 +1,5 @@
 {
-
-  "patients":
-  [
+  "patients": [
     {
       "id": 1,
       "name": "John Doe",
@@ -31,7 +29,7 @@
       }
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "John Doe",
       "age": 45,
       "gender": "Male",
@@ -45,7 +43,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 4,
       "name": "Jane Smith",
       "age": 32,
       "gender": "Female",
@@ -59,14 +57,13 @@
       }
     }
   ],
-  "threshold":[
+  "threshold": [
     {
       "heartRate": 80,
-      "bloodPressure": { "systolic": 120, "diastolic": 80 },
+      "systolic": 120,
+      "diastolic": 80,
       "temperature": 37.5,
       "respiratoryRate": 18
     }
-    
   ]
-  
 }

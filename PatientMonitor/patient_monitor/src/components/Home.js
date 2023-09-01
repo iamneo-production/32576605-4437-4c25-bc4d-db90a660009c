@@ -10,6 +10,8 @@ const Home = () => {
         <Link to="/monitor">Monitor</Link>
         <Link to="/monitor">profile</Link>
         <Link to="/alerts">alerts</Link>
+        <Link to="/updatethreshold">updatethreshold</Link>
+        
 
 
 
