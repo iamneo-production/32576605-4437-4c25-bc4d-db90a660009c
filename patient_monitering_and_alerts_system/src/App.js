@@ -10,6 +10,7 @@ import AdminLogin from './components/AdminLogin';
 import AdminRegistration from './components/AdminRegistration';
 import DoctorLogin from './components/DoctorLogin';
 import DoctorRegistration from './components/DoctorRegistration';
+import Navbar1 from './components/Navbar1';
 function App() {
   return (
     <Router>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/register2" element={<DoctorRegistration />}/>
         <Route path="/patientDetails" element={<PatientDetails/>}/>
         <Route path="/logout" element={<PatientLogin/>} />
+        <Route path="/dd" element={<Navbar1/>}/>
         <Route path="/login"element={PatientLogin} />
       </Routes>
 
